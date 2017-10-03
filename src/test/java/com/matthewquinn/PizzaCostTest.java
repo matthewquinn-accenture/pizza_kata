@@ -1,6 +1,7 @@
 package com.matthewquinn;
 
 
+import com.matthewquinn.component.LargePizza;
 import com.matthewquinn.component.MediumPizza;
 import com.matthewquinn.component.Pizza;
 import com.matthewquinn.decorator.Pepperoni;
@@ -15,5 +16,13 @@ public class PizzaCostTest {
         pizza = new Pepperoni(pizza);
 
         Assert.assertEquals(pizza.getDescription(), "Medium Pizza with Pepperoni");
+    }
+
+    @Test
+    public void shouldCost13Dollars28CentsForLargePizzaWithPepperoni() {
+        Pizza pizza = new LargePizza();
+        pizza = new Pepperoni(pizza);
+
+        Assert.assertEquals(pizza.cost(), 13.28, 2);
     }
 }
