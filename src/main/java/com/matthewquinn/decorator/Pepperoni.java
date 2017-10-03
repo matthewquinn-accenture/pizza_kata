@@ -5,7 +5,7 @@ public class Pepperoni extends Topping {
 
     @Override
     public String getDescription() {
-        return null;
+        return "Pepperoni";
     }
 
     @Override
