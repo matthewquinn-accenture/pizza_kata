@@ -18,4 +18,9 @@ public class SmallPizzaTest {
     public void shouldReturnSmallPizzaDescription() {
         Assert.assertEquals(pizza.getDescription(), "Small Pizza");
     }
+
+    @Test
+    public void shouldCost7NinteyNineForSmallPizza() {
+        Assert.assertEquals(pizza.cost(), 7.99,2);
+    }
 }
