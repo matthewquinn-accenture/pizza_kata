@@ -3,8 +3,10 @@ package com.matthewquinn;
 
 public abstract class Pizza {
 
+    String description = "Unknown Pizza";
+
     public String getDescription() {
-        return "Unknown Pizza";
+        return description;
     }
 
     public abstract double cost();
