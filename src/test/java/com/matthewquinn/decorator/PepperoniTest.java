@@ -11,4 +11,10 @@ public class PepperoniTest {
         Topping topping = new Pepperoni();
         Assert.assertEquals(topping.getDescription(), "Pepperoni");
     }
+
+    @Test
+    public void shouldCost29CentsForPepperoniTopping() {
+        Topping topping = new Pepperoni();
+        Assert.assertEquals(topping.cost(), .29,-2);
+    }
 }
