@@ -1,11 +1,25 @@
 package com.matthewquinn.decorator;
 
 
+import com.matthewquinn.component.Pizza;
+
 public class Pepperoni extends Topping {
+
+    Pizza pizza;
+
+    public Pepperoni() {
+    }
+
+    public Pepperoni(Pizza pizza) {
+        this.pizza = pizza;
+    }
 
     @Override
     public String getDescription() {
-        return "Pepperoni";
+        if(pizza == null){
+            return "Pepperoni";
+        }
+        return pizza.getDescription() + " with Pepperoni";
     }
 
     @Override
