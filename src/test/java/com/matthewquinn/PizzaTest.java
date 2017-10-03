@@ -2,19 +2,25 @@ package com.matthewquinn;
 
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class PizzaTest {
 
+    private Pizza pizza;
+
+    @Before
+    public void setUpPizza() throws Exception {
+        pizza = new Pizza();
+    }
+
     @Test
-    public void pizzaShouldReturnDescription() {
-        Pizza pizza = new Pizza();
+    public void shouldReturnPizzaDescription() {
         Assert.assertEquals(pizza.getDescription(), "Unknown Pizza");
     }
 
     @Test
     public void shouldCalculatePizzaCost() {
-        Pizza pizza = new Pizza();
         Assert.assertEquals(pizza.cost(), 0, 0);
     }
 
