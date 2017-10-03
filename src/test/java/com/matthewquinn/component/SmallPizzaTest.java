@@ -1,4 +1,4 @@
-package com.matthewquinn;
+package com.matthewquinn.component;
 
 
 import org.junit.Assert;

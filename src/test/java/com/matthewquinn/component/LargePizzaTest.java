@@ -1,6 +1,8 @@
-package com.matthewquinn;
+package com.matthewquinn.component;
 
 
+import com.matthewquinn.component.LargePizza;
+import com.matthewquinn.component.Pizza;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

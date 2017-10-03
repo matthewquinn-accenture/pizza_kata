@@ -1,4 +1,4 @@
-package com.matthewquinn;
+package com.matthewquinn.component;
 
 
 public class LargePizza extends Pizza {
