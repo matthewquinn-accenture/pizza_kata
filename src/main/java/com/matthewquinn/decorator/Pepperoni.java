@@ -24,6 +24,9 @@ public class Pepperoni extends Topping {
 
     @Override
     public double cost() {
-        return 0.29;
+        if(pizza == null){
+            return 0.29;
+        }
+        return pizza.cost() + 0.29;
     }
 }
