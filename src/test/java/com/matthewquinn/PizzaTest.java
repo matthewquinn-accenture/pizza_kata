@@ -11,4 +11,11 @@ public class PizzaTest {
         Pizza pizza = new Pizza();
         Assert.assertEquals(pizza.getDescription(), "Unknown Pizza");
     }
+
+    @Test
+    public void shouldCalculatePizzaCost() {
+        Pizza pizza = new Pizza();
+        Assert.assertEquals(pizza.cost(), 0, 0);
+    }
+
 }
