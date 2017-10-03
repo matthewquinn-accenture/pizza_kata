@@ -18,4 +18,9 @@ public class MediumPizzaTest {
     public void shouldReturnMediumPizzaDescription () {
         Assert.assertEquals(pizza.getDescription(), "Medium Pizza");
     }
+
+    @Test
+    public void shouldCost9NinteyNineForMediumPizza() {
+        Assert.assertEquals(pizza.cost(), 9.99, 2);
+    }
 }
