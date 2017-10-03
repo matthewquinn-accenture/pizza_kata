@@ -10,6 +10,6 @@ public class Pepperoni extends Topping {
 
     @Override
     public double cost() {
-        return 0;
+        return 0.29;
     }
 }
