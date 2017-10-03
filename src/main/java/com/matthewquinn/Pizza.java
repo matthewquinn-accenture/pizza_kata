@@ -1,13 +1,11 @@
 package com.matthewquinn;
 
 
-public class Pizza {
+public abstract class Pizza {
 
     public String getDescription() {
         return "Unknown Pizza";
     }
 
-    public double cost() {
-        return 0;
-    }
+    public abstract double cost();
 }
