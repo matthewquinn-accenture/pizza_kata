@@ -11,4 +11,10 @@ public class LargePizzaTest {
         Pizza pizza = new LargePizza();
         Assert.assertEquals(pizza.cost(),12.99,2);
     }
+
+    @Test
+    public void shouldReturnLargePizzaDescription() {
+        Pizza pizza = new LargePizza();
+        Assert.assertEquals(pizza.getDescription(),"Large Pizza");
+    }
 }
