@@ -9,6 +9,6 @@ public class SmallPizza extends Pizza {
 
     @Override
     public double cost() {
-        return 0;
+        return 7.99;
     }
 }
